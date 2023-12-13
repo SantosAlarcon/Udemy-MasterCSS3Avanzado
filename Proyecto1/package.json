@@ -1,0 +1,14 @@
+{
+  "name": "proyecto1",
+  "module": "index.html",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
