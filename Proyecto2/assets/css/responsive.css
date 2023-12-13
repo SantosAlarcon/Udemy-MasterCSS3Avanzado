@@ -108,6 +108,10 @@
     .layout__contact {
         padding: 10rem 0 7rem 0;
     }
+
+    .menu-mobile {
+        visibility: visible;
+    }
 }
 
 @media (width < 1000px) {
@@ -329,6 +333,10 @@
 
     .footer__flinks {
         justify-content: center;
+    }
+
+    .menu__navbar--fixed {
+        padding: 1.5rem 3rem;
     }
 }
 
