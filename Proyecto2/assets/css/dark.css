@@ -1,0 +1,112 @@
+/* VARIABLES */
+:root {
+    --color-text-body: #d3d3d4;
+    --color-primary: #5956e9;
+    --color-secondary: #d3d3d4;
+    --color-banner: #27272e;
+    --color-navbar: #27272e88;
+    --color-text-btn: #fff;
+    --color-bg-btn: #2522ba;
+    --color-subtitle: #c75c6f;
+    --color-title: #d3d3d4;
+    --color-bg-services: #27272e;
+    --color-bg-projects: #292930;
+    --color-bg-dark: #27272e;
+    --color-hover-dark: #e2e236;
+    --color-text-description: #99a1aa;
+    --color-borders: #393940;
+}
+
+body {
+    background-color: #212121;
+}
+
+.nav__title:hover {
+    color: var(--color-secondary);
+}
+
+.nav__title::before {
+    background-color: var(--color-secondary);
+}
+
+.nav__submenu {
+    background-color: var(--color-banner);
+}
+
+.submenu__title:hover {
+    color: var(--color-primary);
+}
+
+.banner__btn {
+    background-color: var(--color-primary);
+}
+
+.menu__navbar--fixed {
+    background-color: var(--color-navbar);
+}
+
+.services__service {
+    background: linear-gradient(#212121 0%, var(--color-banner) 100%);
+
+    &:hover {
+        background: linear-gradient(var(--color-banner) 0%, var(--color-hover-dark) 100%);
+    }
+}
+
+.project__content {
+    background-color: var(--color-banner);
+}
+
+.project__title:hover {
+    color: var(--color-hover-dark);
+}
+
+.layout__contact::before {
+    background-color: var(--color-banner);
+}
+
+.new__link:hover {
+    color: var(--color-hover-dark);
+}
+
+.new__more {
+    color: var(--color-secondary);
+
+    &:hover {
+        color: var(--color-hover-dark);
+    }
+}
+
+.contact__subtitle {
+    color: var(--color-hover-dark);
+}
+
+.contact__btn {
+    background-color: var(--color-primary);
+}
+
+.fleft__group {
+    background-color: #10101088;
+    box-shadow: 0 24px 48px -15px #0007;
+}
+
+.fleft__form-control {
+    background-color: transparent;
+    color: var(--color-title);
+}
+
+.widget__link:hover {
+    color: var(--color-hover-dark);
+}
+
+.author__name {
+    color: var(--color-secondary);
+}
+
+.mobile-btn__wrap {
+    background-color: var(--color-primary);
+}
+
+.menu-mobile {
+    background-color: var(--color-banner);
+}

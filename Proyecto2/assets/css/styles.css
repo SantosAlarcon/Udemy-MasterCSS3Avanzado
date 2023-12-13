@@ -18,7 +18,7 @@
 
 /* ESTILOS GENERALES */
 html {
-    font-size: 10px;
+    font-size: 62.5%;
     overflow-x: hidden;
 }
 
@@ -42,7 +42,7 @@ body {
 /* NAVEGACIÓN Y CABECERA */
 .layout__menu {
     width: 100%;
-    padding: 5rem 9.5rem;
+    padding: 5rem;
 }
 
 .menu__navbar {
@@ -974,7 +974,7 @@ body {
     display: inline-block;
     font-weight: 700;
     color: var(--color-hover-dark);
-    font-size: 1.7;
+    font-size: 1.7rem;
     transition: all 300ms ease-in-out;
 
     &:hover {
@@ -1181,6 +1181,7 @@ body {
 .social__link {
     &:hover > .social__img {
         color: var(--color-text-body);
+        transform: scale(1.5);
     }
 }
 
@@ -1364,6 +1365,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .mobile-btn__line {
@@ -1465,4 +1467,35 @@ body {
     min-width: 100%;
     padding: 0;
     padding-bottom: 1rem;
+}
+
+/* SELECTOR MODO CLARO/OSCURO */
+.switcher {
+    position: fixed;
+    top: 20rem;
+    left: 0;
+    background-color: var(--color-primary);
+    border-radius: 0 3rem 3rem 0;
+    padding: 1rem;
+    z-index: 5;
+}
+
+.switcher__btn {
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+    display: flex;
+}
+
+.switcher__icon-light,
+.switcher__icon-dark {
+    color: var(--color-secondary);
+    font-size: 1.8rem;
+    height: 4rem;
+    width: 4rem;
+    line-height: 3.6rem;
+}
+
+.switcher__icon-dark {
+    display: none;
 }

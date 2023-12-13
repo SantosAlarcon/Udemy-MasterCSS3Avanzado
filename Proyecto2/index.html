@@ -15,14 +15,29 @@
     <!-- CSS de estilos -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!--<link rel="stylesheet" href="./assets/css/dark.css" />-->
     <link rel="stylesheet" href="./assets/css/responsive.css" />
 
     <!-- Cargar scripts -->
     <script src="assets/js/menu-mobile.js"></script>
     <script src="assets/js/navbar-fixed.js"></script>
+    <script src="assets/js/dark.js"></script>
   </head>
 
   <body>
+
+    <!-- BOTÓN MODO OSCURO -->
+    <div class="switcher">
+        <button class="switcher__btn">
+            <span class="switcher__icon-light">
+                <i class="fa-solid fa-moon switcher__icon"></i>
+            </span>
+            <span class="switcher__icon-dark">
+                <i class="fa-solid fa-lightbulb switcher__icon"></i>
+            </span>
+        </button>
+    </div>
+
     <div class="menu-mobile">
       <header class="menu-mobile__header">
         <div class="menu-mobile__container-logo">
@@ -136,7 +151,7 @@
             <a href="#" class="navbar__link-logo">
               <img
                 src="assets/img/logo1.webp"
-                class="navbar__logo--light"
+                class="navbar__logo-img"
                 alt="Logo de Develop"
               />
             </a>
@@ -181,13 +196,30 @@
               </li>
               <li class="nav__item">
                 <a href="#" class="nav__title"
-                  >Portafolio
+                  >Portfolio
                   <i class="fa-solid fa-chevron-down nav__icon"></i>
                 </a>
                 <ul class="nav__submenu">
                   <li class="submenu__item">
-                    <a href="#" class="submenu__title"></a>
+                    <a href="#" class="submenu__title">Desarrollo Web</a>
                   </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__title">Desarrollo de apps</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__title">Programación</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__title">Consultoría</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__title"
+                  >Blog
+                  <i class="fa-solid fa-chevron-down nav__icon"></i>
+                </a>
+                <ul class="nav__submenu">
                   <li class="submenu__item">
                     <a href="#" class="submenu__title">Desarrollo Web</a>
                   </li>
