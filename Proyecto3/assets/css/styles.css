@@ -1614,6 +1614,8 @@ p {
     overflow: hidden;
     width: 33rem;
     height: 22rem;
+    display: flex;
+    justify-content: center;
 }
 
 .fslider__img {
@@ -1664,7 +1666,7 @@ p {
 }
 
 .footer__text {
-    width: 55%;
+    width: 77%;
     margin: 0 auto;
     font-size: 1.2rem;
     white-space: nowrap;
