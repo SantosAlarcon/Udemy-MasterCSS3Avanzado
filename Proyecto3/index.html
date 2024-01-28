@@ -9,8 +9,10 @@
     <link href="assets/fonts/montserrat/montserrat.css" rel="stylesheet" />
     <link href="assets/css/reset.css" rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/marquee.js"></script>
+    <script src="./assets/js/menu.js"></script>
 </head>
 
 <body>
@@ -30,8 +32,72 @@
         </header>
 
         <!-- Navegación -->
-        <section class="layout__nav-container">
+        <section class="layout__nav">
             <nav class="nav__navbar">
+
+                <!-- Botón menú responsive -->
+                <div class="navbar__mobile-btn">
+                    <i class="fa-solid fa-bars">
+
+                    </i>
+                </div>
+                <!-- Menú responsive -->
+                <ul class="navbar__mobile-list">
+
+                    <!-- Elemento con submenu -->
+                    <li class="mobile-list__item">
+                        <div class="mobile-list__container">
+                            <a href="#" class="mobile-list__link">
+                                NOTICIAS
+                            </a>
+
+                            <div class="mobile-list__icon" id="icon1">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <ul class="mobile-list__msubmenu" id="submenu1">
+                            <li class="msubmenu__item"><a href="#" class="msubmenu__link">Videojuegos</a></li>
+                            <li class="msubmenu__item"><a href="#" class="msubmenu__link">Cine</a></li>
+                            <li class="msubmenu__item"><a href="#" class="msubmenu__link">Tecnología</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="mobile-list__item">
+                        <a href="#" class="mobile-list__link">
+                            Análisis
+                        </a>
+                    </li>
+                    <li class="mobile-list__item">
+                        <a href="#" class="mobile-list__link">
+                            Juegos
+                        </a>
+                    </li>
+                    <li class="mobile-list__item">
+                        <div class="mobile-list__container">
+                            <a href="#" class="mobile-list__link">
+                                Categorías
+                            </a>
+
+                            <div class="mobile-list__icon" id="icon2">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+
+                        <ul class="mobile-list__msubmenu" id="submenu2">
+                            <li class="msubmenu__item"><a href="#" class="msubmenu__link">Acción</a></li>
+                            <li class="msubmenu__item"><a href="#" class="msubmenu__link">Lucha</a></li>
+                            <li class="msubmenu__item"><a href="#" class="msubmenu__link">Sandbox</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="mobile-list__item">
+                        <a href="#" class="mobile-list__link">
+                            Ranking
+                        </a>
+                    </li>
+                </ul>
+                <!-- Navegación escritorio -->
+
                 <ul class="navbar__list">
                     <li class="navbar__item">
                         <a href="#" class="navbar__link">NOTICIAS</a>
@@ -799,7 +865,7 @@
                         </h2>
                     </div>
                 </li>
-                <li class="carousel-games__item">
+                <li class="carousel-games__item carousel-games__item--hidden-small">
                     <div class="carousel-games__image">
                         <a href="#" class="carousel-games__image-link">
                             <img src="assets/img/carrusel-games-2.webp" class="carousel-games__img">
@@ -820,7 +886,7 @@
                         </h2>
                     </div>
                 </li>
-                <li class="carousel-games__item">
+                <li class="carousel-games__item carousel-games__item--hidden">
                     <div class="carousel-games__image">
                         <a href="#" class="carousel-games__image-link">
                             <img src="assets/img/carrusel-games-3.webp" class="carousel-games__img">
@@ -841,7 +907,7 @@
                         </h2>
                     </div>
                 </li>
-                <li class="carousel-games__item">
+                <li class="carousel-games__item carousel-games__item--hidden">
                     <div class="carousel-games__image">
                         <a href="#" class="carousel-games__image-link">
                             <img src="assets/img/carrusel-games-4.webp" class="carousel-games__img">

@@ -32,7 +32,7 @@ body {
 }
 
 p {
-    font-weight: 100;
+    font-weight: 400;
 }
 
 /* Barra superior decorativa */
@@ -69,7 +69,7 @@ p {
 }
 
 /* Estilos de la barra de navegación */
-.layout__nav-container {
+.layout__nav {
     grid-area: nav;
 
     position: relative;
@@ -131,7 +131,7 @@ p {
     }
 }
 
-.navbar__btn-search {
+.navbar__btn-search, .navbar__mobile-btn {
     background-color: var(--color-secundario);
     padding: 0.8rem 1.3rem;
     height: 5rem;
@@ -1105,9 +1105,10 @@ p {
     margin-bottom: 3rem;
 }
 
-.posts__list-header {
+.posts__list-header, .recent__list-header {
     display: flex;
     gap: 0.5rem;
+    align-items: center;
 }
 
 .list-header--small {
@@ -1378,9 +1379,10 @@ p {
         padding: 0.15rem 0.5rem;
     }
 
-    & .last-reviews__list-header {
+    & .last-reviews__list {
         display: flex;
         gap: 1rem;
+        align-items: center;
     }
 
     & .last-reviews__link-title--small {
