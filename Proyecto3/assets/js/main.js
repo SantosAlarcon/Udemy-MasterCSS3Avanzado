@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", () => {
     let input_search = document.querySelector(".search__input");
     let btn_search = document.querySelector(".navbar__button");
 

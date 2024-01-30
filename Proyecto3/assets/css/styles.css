@@ -53,7 +53,7 @@ p {
     width: 55vw;
     min-width: 100rem;
     margin: 0 auto;
-    padding: 10rem;
+    padding: 10rem 0;
 }
 
 /* Estilos de la cabecera */
@@ -270,7 +270,7 @@ p {
 }
 
 .carousel__img {
-    width: auto;
+    width: 100%;
     height: 100%;
 }
 
@@ -478,14 +478,6 @@ p {
     text-transform: uppercase;
 }
 
-.slider__rating {
-    position: relative;
-    top: -3rem;
-    left: 14.5rem;
-    width: 4rem;
-    height: 4rem;
-}
-
 /* Estilos de los mejores momentos */
 .layout__highlights {
     grid-area: high;
@@ -519,6 +511,7 @@ p {
 .highlights__img,
 .post__img {
     transition: all 300ms ease;
+    width: 100%;
 
     &:hover {
         transform: scale(1.1);
@@ -829,18 +822,20 @@ p {
 .carousel-games__item {
     position: relative;
     overflow: hidden;
+    flex-basis: calc(25% - 0.2rem);
 }
 
 .carousel-games__img {
     width: 100%;
 }
 
-.carousel-games__rating {
+.carousel-games__rating, .game__rating, .slider__rating {
     position: absolute;
     top: 1rem;
     right: 1rem;
     width: 4rem;
     height: 4rem;
+    z-index: 2;
 }
 
 .carousel-games__info {
@@ -849,6 +844,7 @@ p {
     text-align: center;
     padding: 0 1rem;
     transition: all 300ms;
+    width: 100%;
 }
 
 .carousel-games__category {
@@ -909,7 +905,7 @@ p {
     position: relative;
     overflow: hidden;
     flex-basis: 50%;
-    height: 200px;
+    height: 254px;
 }
 
 .main-post__img {
@@ -1051,15 +1047,6 @@ p {
     overflow: hidden;
 }
 
-.game__rating {
-    width: 4rem;
-    height: 4rem;
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    z-index: 9;
-}
-
 .game__link-image {
     overflow: hidden;
 }
@@ -1105,10 +1092,10 @@ p {
     margin-bottom: 3rem;
 }
 
-.posts__list-header, .recent__list-header {
+.posts__list-header, .recent__list-header, .last-reviews__list-header {
     display: flex;
     gap: 0.5rem;
-    align-items: center;
+    height: inherit;
 }
 
 .list-header--small {
@@ -1307,6 +1294,7 @@ p {
         display: inline-block;
         font-size: 1.3rem;
         padding: 0.3rem 0.5rem;
+	line-height: normal
     }
 
     & .list-header--small {
@@ -1324,7 +1312,7 @@ p {
 .recent__list-posts {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .recent__item {
@@ -1375,14 +1363,9 @@ p {
     width: 100%;
     margin-bottom: 3rem;
 
-    & .last-reviews__subheader {
-        padding: 0.15rem 0.5rem;
-    }
-
     & .last-reviews__list {
         display: flex;
-        gap: 1rem;
-        align-items: center;
+        gap: .5rem;
     }
 
     & .last-reviews__link-title--small {
